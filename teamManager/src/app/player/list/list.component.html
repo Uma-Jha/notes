@@ -1,0 +1,12 @@
+<fieldset>
+  <legend>Players</legend>
+  <ul>
+    <li *ngFor="let task of players">
+      <h5>{{ task.name }}</h5>
+      <p>{{ task.position }}</p>
+      <p>{{ task.game1 }}</p> 
+      <button (click)="deletePlayer(task)">Delete</button>
+      <button (click)="updatePlayer(task)">Update</button>
+    </li>
+  </ul>
+</fieldset>

@@ -1,0 +1,8 @@
+<fieldset>
+    <legend>Add Player</legend>
+    <form (submit)="onSubmit()" #f="ngForm">
+      <input type="text" name="name" [(ngModel)]="newPlayer.name" placeholder="Enter name">
+      <input type="text" name="position" [(ngModel)]="newPlayer.position" placeholder="Enter position">
+      <input type="submit" value="Add Player">
+    </form>
+  </fieldset>
